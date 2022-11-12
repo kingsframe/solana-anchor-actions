@@ -33,4 +33,4 @@ jobs:
       - run: ls
       - run: anchor || true
       - name: Run anchor test
-        run: anchor test
+        run: anchor build
