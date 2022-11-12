@@ -27,7 +27,9 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-
+      - run: whoami
+      - run: id
+      - run: cat /etc/passwd
       - run: pwd
       - run: printenv
       - run: ls -la
