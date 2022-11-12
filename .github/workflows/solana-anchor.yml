@@ -20,6 +20,8 @@ jobs:
     name: Run anchor analyzing
     runs-on: ubuntu-latest
     container: projectserum/build:v0.25.0
+    env:
+      HOME: /root
 #     permissions:
 #       contents: read
 #       security-events: write
