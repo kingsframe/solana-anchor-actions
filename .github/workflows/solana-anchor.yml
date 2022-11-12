@@ -30,7 +30,8 @@ jobs:
 
       - run: pwd
       - run: printenv
-      - run: ls
+      - run: ls -la
+      - run: rustup show
       - run: anchor || true
       - name: Run anchor test
         run: anchor build
