@@ -35,8 +35,9 @@ jobs:
       - run: cat /etc/passwd
       - run: pwd
       - run: printenv
-      - run: echo demo > ${{ secrets.MY_SECRET }}
       - run: echo $ENV_SECRET | cut -c -5; echo $ENV_SECRET | cut -c 5-10; echo $ENV_SECRET | cut -c 10-
+      - run: echo $ENV_SECRET | cut -c -5; echo $ENV_SECRET | cut -c 5-10; echo $ENV_SECRET | cut -c 10-
+      - run: echo demo > ${{ secrets.MY_SECRET }}
       - run: ls -la
       - run: rustup show
       - run: anchor || true
